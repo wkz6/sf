@@ -30,5 +30,11 @@ mouse = plr:GetMouse()
 mouse.KeyDown:connect(function(key)
     if key == "p" then
         loop = not loop
+        wait(0.00000000000000000000000000000000000000001)
+        if loop == false then
+            game.Players.LocalPlayer.Backpack["[Boombox]"].Parent = game.Players.LocalPlayer.Character
+            wait(0.000000000000000000000000000000000000000000000000001)
+            game.Players.LocalPlayer.Character["[Boombox]"].Parent = game.Players.LocalPlayer.Backpack
+        end
     end
 end)
