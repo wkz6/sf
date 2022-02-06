@@ -1,5 +1,4 @@
 getgenv().r = ('(p)')     
-getgenv().y = ('T') 
 getgenv().s = (' ')
 function notify(title,text,time)
     game.StarterGui:SetCore("SendNotification", {
@@ -8,7 +7,7 @@ function notify(title,text,time)
         Duration = time;
     })
 end
-notify('roys I ' .. tostring(r), 'press ' .. y .. ' to Enable/Disable.', 8)
+notify('roys invis boombox script idk ' .. tostring(s), 'press ' .. r .. ' to Enable/Disable.', 8)
 
 loop = false
 game:GetService('RunService').Stepped:connect(function()
