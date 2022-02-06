@@ -18,6 +18,7 @@ game:GetService('RunService').Stepped:connect(function()
         for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
             if v.Name == "BOOMBOXHANDLE" and v:IsA("Part") then
                 v.Weld:Destroy()
+                v.Transparency = 1
                 v.Anchored = false
                 wait(2)
                 v.Anchored = true
